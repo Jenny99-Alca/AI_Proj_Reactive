@@ -1,0 +1,75 @@
+//
+//  main.cpp
+//  AI_proj
+//
+//  Created by Jenny Alcantara on 5/2021.
+//
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main(int argc, const char * argv[]) {
+ 
+  cout << "\n*----------*----------**----------*----------**----------*----------*";
+  cout << "\n A Small Example of Reactve AI: \n";
+  cout << "*----------*----------**----------*----------**----------*----------*\n";
+  cout << "\n Hello There! \n\n Using one word, describe how you are feeling: ";
+
+    
+  string s;
+  cin >> s;
+  string response;
+    
+   
+    if (s == "sad"){
+        cout << "\n Why are you feeling sad. I'm here for you: \n ";
+        cin >> response;
+        getline (cin, response);
+        cout << "\n Try to not feel that way. Life is too short.\n";
+        getline (cin, response);
+    }
+    else if (s ==  "happy"){
+        cout << "\n I'm glad you're happy! Thats great!\n";
+        cin >> response;
+        getline (cin, response);
+        cout << "\n Wow that's fantastic! I'm so proud of you.\n";
+        getline (cin, response);
+    }
+    
+    else if (s ==  "mad"){
+        cout << "\n Why are you mad? Did someone do something to you or are" "\n" " you just mad at something that happened to you? \n";
+        cin >> response;
+        getline (cin, response);
+        cout << "\n Try to not feel that way. Life is too short.\n";
+        getline (cin, response);
+    }
+    
+    else if (s ==  "afraid"){
+        cout << "\n Is everything alright, are you in danger? \n";
+        cin >> response;
+        getline (cin, response);
+        cout << "\n Do you need me to call for help or do you want to just talk? \n";
+        getline (cin, response);
+    }
+    
+    else if (s ==  "lonely"){
+        cout << "\n Don't feel lonely. Try to relax and remember your loved ones." "\n" " Someone always has your back. \n";
+        cin >> response;
+        getline (cin, response);
+        cout << "\n Trust me there's always somebody looking out for you. \n?";
+        getline (cin, response);
+    }
+    
+    else if (s ==  "confused"){
+        cout << "\n Why are you confused? You can talk to me about it. \n";
+        cin >> response;
+        getline (cin, response);
+        cout << "\n I know you can figure this out? If it helps to talk, I'm here. \n?";
+        getline (cin, response);
+    }
+    
+    return 0;
+}
